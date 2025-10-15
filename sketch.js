@@ -4,14 +4,23 @@ let table
 
 function preload() {
 
+    toros = createImg("toros.jpg");
     
     pChino = createImg("Papel_Chino.png");
     pChino3 = createImg("Papel_Chino.png");
     pChino2 = createImg("Papel_Chino.png");
+
+    // background items
+    
+    tri = createImg("Blair-Cincinnati-RB-Camera.webp");
+
+    //TABLE
     table = createImg("Table.png");
-    bolt = createImg("Bolt.png");
+    mantel1 = createImg("mantel.jpg");
     
     
+    
+    // items on the table
     catrina = createImg("Catrina.png");
     flor = createImg("Flor_1.avif");
     tony = createImg("FB_IMG_1760380455186.jpg");
@@ -21,11 +30,17 @@ function preload() {
     cap = createImg("Tony Cap.png");
     spin = createImg("spin.gif");
     pan = createImg("pan_muerto.webp");
+    camera = createImg("camerav.png");
 
+
+    spinS = createImg("spinning-skull.gif");
+    bolt = createImg("Bolt.png");
+    rockin = createImg("rockingchair.gif");
 }
 
 function setup() {
     createCanvas(1500, 1500);
+
 
 }
 
@@ -62,9 +77,29 @@ function draw() {
 
     candles.position(700,600)
 
-    spin.position(1230,820)
+    spin.position(150,820)
     spin.size(100,100);
 
     pan.position(500,750)
     pan.size(200,200);
+
+    mantel1.position(300,800)
+    mantel1.size(800,400);
+
+    tri.position(500,300)
+    tri.size(1000,1000);
+
+    camera.position(280,790)
+    camera.size(200,120);
+    
+    toros.position(40,300)
+    toros.size(750,500);
+
+    spinS.position(1000,400)
+    spinS.size(400,400);
+
+    rockin.position(800,700)
+    rockin.size(800,800);
+
+    
 }
