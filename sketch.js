@@ -1,8 +1,9 @@
-let table
 
 // Layered bottom to top (image at the furthermost back is at the top of the list)
 
 function preload() {
+    floor = createImg("pexels-suzyhazelwood-2937884.jpg");
+    bg = createImg("pexels-anna-guerrero.jpg");
 
     toros = createImg("toros.jpg");
     
@@ -13,6 +14,8 @@ function preload() {
     // background items
     
     tri = createImg("Blair-Cincinnati-RB-Camera.webp");
+    catrina = createImg("Catrina.png");
+    catrina1 = createImg("catrina1.png");
 
     //TABLE
     table = createImg("Table.png");
@@ -21,8 +24,10 @@ function preload() {
     
     
     // items on the table
-    catrina = createImg("Catrina.png");
+    
     flor = createImg("Flor_1.avif");
+    spinS = createImg("spinning-skull.gif");
+    dulces = createImg("dulces.png");
     tony = createImg("FB_IMG_1760380455186.jpg");
     frame = createImg("Frame.png");
     candles = createImg("candles.gif");
@@ -31,11 +36,14 @@ function preload() {
     spin = createImg("spin.gif");
     pan = createImg("pan_muerto.webp");
     camera = createImg("camerav.png");
+   
 
 
-    spinS = createImg("spinning-skull.gif");
+    
     bolt = createImg("Bolt.png");
+     yncap = createImg("YNcap.webp");
     rockin = createImg("rockingchair.gif");
+    nombre = createImg("Tony.gif");
 }
 
 function setup() {
@@ -46,6 +54,9 @@ function setup() {
 
 function draw() {
     background(220);
+
+    bg.position(0,-400)
+    bg.size(1500,1500);
 
     bolt.position(0,1000)
     bolt.size(400,400);
@@ -72,8 +83,8 @@ function draw() {
     cap.position(1000,700)
     cap.size(250,250);
 
-    catrina.position(250,350)
-    catrina.size(500,500);
+    catrina.position(400,150)
+    catrina.size(900,900);
 
     candles.position(700,600)
 
@@ -86,20 +97,33 @@ function draw() {
     mantel1.position(300,800)
     mantel1.size(800,400);
 
-    tri.position(500,300)
+    tri.position(700,300)
     tri.size(1000,1000);
 
     camera.position(280,790)
     camera.size(200,120);
     
-    toros.position(40,300)
+    toros.position(40,200)
     toros.size(750,500);
 
-    spinS.position(1000,400)
+    spinS.position(100,100)
     spinS.size(400,400);
 
     rockin.position(800,700)
     rockin.size(800,800);
 
-    
+    dulces.position(800,520)
+    dulces.size(400,400);
+
+    floor.position(0,1100)
+    floor.size(1500,400);
+
+    nombre.position(500,450)
+    nombre.size(400,200);
+
+    catrina1.position(-200,500)
+    catrina1.size(700,700);
+
+    yncap.position(160,990)
+    yncap.size(150,150);
 }
